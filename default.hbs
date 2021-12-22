@@ -54,13 +54,15 @@
                         <a class="gh-social-link gh-social-twitter" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="me noopener">{{> "icons/twitter"}}</a>
                     {{/if}}
                 </div>
+
                 {{#if @site.members_enabled}}
                     {{#unless @member}}
-                        <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                        <a class="gh-head-button" href="#/portal/signup" data-portal="signup">{{t "Subscribe"}}</a>
                     {{else}}
-                        <a class="gh-head-button" href="#/portal/account" data-portal="account">Account</a>
+                        <a class="gh-head-button" href="#/portal/account" data-portal="account">{{t "Account"}}</a>
                     {{/unless}}
                 {{/if}}
+
             </div>
         </nav>
     </header>
