@@ -82,9 +82,10 @@ into the {body} tag of the default.hbs template --}}
 
     </header>
 
-    <section class="gh-content gh-canvas">
-        {{content}}
-    </section>
+        <section class="gh-content gh-canvas">
+            {{content}}
+            <p style="font-size:100%;">&#x1f3f7; {{tags separator=" | "}}</p>
+        </section>
 
     {{#if comments}}
         <section class="article-comments gh-canvas">
